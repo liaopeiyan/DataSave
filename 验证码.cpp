@@ -7,15 +7,17 @@ int main()
     string ResultNWord(int);
     int n;
     string checkWord;
-    cin >> n;
-    checkWord = ResultNWord(n);
-    cout << checkWord << endl;
+	while(1) {
+		cin >> n;
+		checkWord = ResultNWord(n);
+		cout << checkWord << endl;
+	}
     return 0;
 }
 
 string ResultNWord(int n) 
 {
-    string line = "123456789abcdefghijklmnopqrstuvwxyzkABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+    string line = "123456789abcdefghijklmnopqrstuvwxyzkABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()~_-+ ";
     string result;
     int i = 0, str_len;
     srand(time(0));
